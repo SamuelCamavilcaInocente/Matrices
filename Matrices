@@ -1,0 +1,42 @@
+EJERCICIO 1: 
+import numpy as np
+
+valores=[[1, 2, 3],
+           [4, 5, 6],
+           [7, 8, 9],
+           [10, 11, 12]]
+
+matriz =np.array(valores)
+
+print("matriz original:")
+
+print(matriz)
+
+columna_eliminar= int(input("Ingrese la columna que deseas eliminar (0,1,2): "))
+
+if columna_eliminar in [0,1,2]:
+
+    matriz=np.delete(matriz, columna_eliminar, axis=1)
+    print("Matriz despues de eliminar:")
+    print(matriz)
+
+else:
+    print("indice invalido, Debe ser 0,1 o 2.")
+
+
+
+EJERCICIO 2:
+import numpy as np
+
+valores =np.array([[1, 2, 3],
+           [4, 5, 6],
+           [7, 8, 9]])
+
+valores1 = np.array([[5, 6, 7],
+            [8, 9, 10],
+            [11, 12, 13]])
+
+# Realizar el producto punto
+resultado = valores * valores1
+
+print(resultado)
